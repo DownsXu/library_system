@@ -4,10 +4,10 @@
  - 后端：Springboot + Mysql + Mybatis
 
 ## Download
-```sh
-$ git clone https://github.com/DownsXu/database_design.git
+```shell
+git clone https://github.com/DownsXu/database_design.git
 ```
 ## Install
-```sh
-$ npm install
+```shell
+npm install
 ```
