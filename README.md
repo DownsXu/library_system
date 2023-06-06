@@ -7,5 +7,3 @@
 ```sh
 $ npm install
 ```
-
-<a href="https://github.com/DownsXu/database_design/graphs/contributors"><img src="https://opencollective.com/standard-readme/contributors.svg?width=890&button=false" /></a>
