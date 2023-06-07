@@ -74,6 +74,16 @@
             </template>
             <el-menu-item index="/returList">还书列表</el-menu-item>
           </el-submenu>
+
+<!--          零售管理-->
+          <el-submenu index="buy">
+            <template slot="title">
+              <i class="el-icon-goods"></i>
+              <span>零售管理</span>
+            </template>
+            <el-menu-item index="/returList">零售记录</el-menu-item>
+          </el-submenu>
+
         </el-menu>
       </div>
 
