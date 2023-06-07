@@ -4,7 +4,7 @@
     <div style="height: 60px; line-height: 60px; background-color: white; margin-bottom: 2px; display: flex">
       <div style="width: 300px">
         <img src="@/assets/logo.png" alt="" style="width: 40px; position: relative; top: 10px; left: 20px">
-        <span style="margin-left: 25px; font-size: 24px">图书管理系统</span>
+        <span style="margin-left: 25px; font-size: 24px">书吧</span>
       </div>
       <div style="flex: 1; text-align: right; padding-right: 20px">
         <el-dropdown size="medium">

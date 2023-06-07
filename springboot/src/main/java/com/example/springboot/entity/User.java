@@ -6,6 +6,9 @@ import lombok.Data;
 import java.beans.Transient;
 import java.util.Date;
 
+/**
+ * 用户实体类
+ */
 @Data
 public class User {
     private Integer id;

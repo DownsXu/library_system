@@ -5,13 +5,13 @@
  Source Server Type    : MySQL
  Source Server Version : 50737
  Source Host           : localhost:3306
- Source Schema         : library-management
+ Source Schema         : library_system
 
  Target Server Type    : MySQL
  Target Server Version : 50737
  File Encoding         : 65001
 
- Date: 03/11/2022 19:01:59
+ Date: 06/06/2023 19:01:59
 */
 
 SET NAMES utf8mb4;

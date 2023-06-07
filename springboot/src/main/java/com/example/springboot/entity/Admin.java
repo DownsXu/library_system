@@ -5,6 +5,9 @@ import lombok.Data;
 
 import java.util.Date;
 
+/**
+ * 管理员实体类
+ */
 @Data
 public class Admin {
     private Integer id;

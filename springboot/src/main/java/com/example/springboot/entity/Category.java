@@ -6,6 +6,9 @@ import lombok.Data;
 import java.time.LocalDate;
 import java.util.List;
 
+/**
+ * 类别
+ */
 @Data
 public class Category {
     private Integer id;

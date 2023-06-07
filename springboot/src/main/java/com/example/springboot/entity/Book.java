@@ -5,6 +5,9 @@ import lombok.Data;
 import java.io.Serializable;
 import java.util.List;
 
+/**
+ * 图书实体类
+ */
 @Data
 public class Book extends BaseEntity implements Serializable {
 

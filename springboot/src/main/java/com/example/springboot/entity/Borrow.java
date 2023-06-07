@@ -5,6 +5,9 @@ import lombok.Data;
 
 import java.time.LocalDate;
 
+/**
+ * 借阅实体类
+ */
 @Data
 public class Borrow {
 

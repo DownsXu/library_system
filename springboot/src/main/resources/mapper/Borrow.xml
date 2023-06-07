@@ -29,7 +29,7 @@
             <if test="bookNo != null and bookNo != ''">
                 and book_no = #{bookNo}
             </if>
-            <if test=" userName  != null and  userName  != ''">
+            <if test=" userName  != null and userName  != ''">
                 and user_name like concat('%', #{ userName }, '%')
             </if>
         </where>
