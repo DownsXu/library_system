@@ -69,8 +69,8 @@ const routes = [
       { path: 'addBorrow', name: 'AddBorrow', component: () => import('@/views/borrow/Add.vue') },
       { path: 'editBorrow', name: 'EditBorrow', component: () => import('@/views/borrow/Edit.vue') },
 
-      //  ==== Buy ====
-      {path: 'buyList', name: 'BuyList', component: () => import('@/views/sale/List.vue')},
+      //  ==== sale ====
+      {path: 'saleList', name: 'SaleList', component: () => import('@/views/sale/List.vue')},
       {path: 'addList', name: 'AddList', component: () => import('@/views/sale/Add.vue')},
       //  ====  Return  ====
       { path: 'returList', name: 'returList', component: () => import('@/views/retur/List.vue') },

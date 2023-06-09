@@ -84,7 +84,7 @@
               <span>零售管理</span>
             </template>
             <el-menu-item index="/addList">零售添加</el-menu-item>
-            <el-menu-item index="/buyList">零售记录</el-menu-item>
+            <el-menu-item index="/saleList">零售记录</el-menu-item>
           </el-submenu>
         </el-menu>
       </div>

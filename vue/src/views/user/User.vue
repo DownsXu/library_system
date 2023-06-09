@@ -84,7 +84,7 @@ export default {
   data() {
     const checkNums = (rule, value, callback) => {
       value = parseInt(value)
-      if (value < 10 || value > 200) {
+      if (value < 0 || value > 10000) {
         callback(new Error('请输入大于等于10小于或等于200的整数'));
       }
       callback()

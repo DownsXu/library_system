@@ -3,7 +3,6 @@ package com.example.springboot.service.impl;
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.util.IdUtil;
 import com.example.springboot.controller.request.BaseRequest;
-import com.example.springboot.controller.request.UserPageRequest;
 import com.example.springboot.entity.User;
 import com.example.springboot.mapper.UserMapper;
 import com.example.springboot.service.IUserService;

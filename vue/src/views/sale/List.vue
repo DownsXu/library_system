@@ -4,8 +4,8 @@
       <el-input style="width: 240px" placeholder="请输入图书名称" v-model="params.bookName"></el-input>
       <el-input style="width: 240px; margin-left: 5px" placeholder="请输入图书标准码" v-model="params.bookNo"></el-input>
       <el-input style="width: 240px; margin-left: 5px" placeholder="请输入用户名称" v-model="params.userName"></el-input>
-      <el-button style="margin-left: 5px" type="primary" @click="load"><i class="el-icon-search"></i> 搜索</el-button>
-      <el-button style="margin-left: 5px" type="warning" @click="reset"><i class="el-icon-refresh"></i> 重置</el-button>
+      <el-button style="margin-left: 5px" type="primary" @click="load"><i class="el-icon-search"></i>搜索</el-button>
+      <el-button style="margin-left: 5px" type="warning" @click="reset"><i class="el-icon-refresh"></i>重置</el-button>
     </div>
 
     <el-table :data="tableData" stripe row-key="id"  default-expand-all>
@@ -77,6 +77,7 @@ export default {
         if (res.code === '200') {
           this.tableData = res.data.list
           this.total = res.data.total
+          console.log(this.tableData.bookName)
         }
       })
     },
@@ -96,7 +97,7 @@ export default {
       this.load()
     },
     del(id) {
-      request.delete("/sale/delete/" + id).then(res => {
+      request.delete("/sale/delete" + id).then(res => {
         if (res.code === '200') {
           this.$notify.success('删除成功')
           this.load()

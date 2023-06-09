@@ -29,11 +29,11 @@
           <el-tag type="danger" v-if="scope.row.note === '已过期'">{{ scope.row.note }}</el-tag>
         </template>
       </el-table-column>
-      <el-table-column label="管理">
-        <template v-slot="scope">
-          <el-button type="primary" @click="returnBooks(scope.row)" v-if="scope.row.status === '已借出'">还书</el-button>
-        </template>
-      </el-table-column>
+<!--      <el-table-column label="管理">-->
+<!--        <template v-slot="scope">-->
+<!--          <el-button type="primary" @click="returnBooks(scope.row)" v-if="scope.row.status === '已借出'">还书</el-button>-->
+<!--        </template>-->
+<!--      </el-table-column>-->
 <!--      <el-table-column prop="updatetime" label="更新时间"></el-table-column>-->
       <el-table-column label="操作">
         <template v-slot="scope">

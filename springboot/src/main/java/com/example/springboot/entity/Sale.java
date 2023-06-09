@@ -59,5 +59,6 @@ public class Sale {
     /**
      * 售书日期
      */
+    @JsonFormat(pattern = "yyyy-MM-dd", timezone = "GMT+8")
     private LocalDate saleDate;
 }
