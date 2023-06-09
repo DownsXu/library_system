@@ -23,13 +23,13 @@ import * as echarts from 'echarts'
 
 const option = {
   title: {
-    text: '图书借还统计'
+    text: '图书借还售卖统计'
   },
   tooltip: {
     trigger: 'axis'
   },
   legend: {
-    data: ['借书数量', '还书数量']
+    data: ['借书数量', '还书数量', '售书数量']
   },
   grid: {
     left: '3%',
@@ -64,7 +64,14 @@ const option = {
       stack: 'Total',
       smooth: true,
       data: []
-    }
+    },
+    {
+      name: '售书数量',
+      type: 'line',
+      stack: 'Total',
+      smooth: true,
+      data: []
+    },
   ]
 }
 
@@ -94,6 +101,11 @@ const option = {
           option.xAxis.data = res.data.date
           option.series[0].data = res.data.borrow
           option.series[1].data = res.data.retur
+          this.lineBox.setOption(option)
+        })
+        request.get('/sale/lineCharts/' + this.timeRange).then(res => {
+          option.xAxis.data = res.data.date
+          option.series[2].data = res.data.sale;
           this.lineBox.setOption(option)
         })
       }
