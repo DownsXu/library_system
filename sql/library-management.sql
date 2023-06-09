@@ -201,4 +201,18 @@ INSERT INTO `user` VALUES (21, '落布', '202209271018800687', 20, NULL, NULL, N
 INSERT INTO `user` VALUES (22, '卡森', '202209271213716465', 22, '男', '13988990066', NULL, '2022-09-27 22:34:48', '2022-10-25 19:31:12', 100, 1);
 INSERT INTO `user` VALUES (23, '杰克', '20220927688792394', 33, '男', '13977889988', NULL, '2022-09-27 22:35:35', '2022-10-25 21:07:15', -40, 0);
 
+CREATE TABLE `sale` (
+                        `id` int(11) NOT NULL AUTO_INCREMENT,
+                        `book_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+                        `book_no` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+                        `user_no` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+                        `user_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+                        `user_phone` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+                        `createtime` datetime DEFAULT CURRENT_TIMESTAMP,
+                        `updatetime` datetime DEFAULT CURRENT_TIMESTAMP,
+                        `score` int(10) DEFAULT NULL,
+                        PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
 SET FOREIGN_KEY_CHECKS = 1;
