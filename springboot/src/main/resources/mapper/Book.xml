@@ -18,14 +18,14 @@
     </select>
 
     <insert id="save">
-        insert into book(name, description, publish_date, author, publisher, category, book_no, cover, score, nums)
-        values(#{name}, #{description}, #{publishDate}, #{author}, #{publisher}, #{category}, #{bookNo}, #{cover}, #{score}, #{nums})
+        insert into book(name, description, publish_date, author, publisher, type, category, book_no, cover, score, nums)
+        values(#{name}, #{description}, #{publishDate}, #{author}, #{publisher}, #{type}, #{category}, #{bookNo}, #{cover}, #{score}, #{nums})
     </insert>
 
     <update id="updateById">
         update book set name = #{name}, description = #{description}, publish_date = #{publishDate}, author = #{author},
                         publisher = #{publisher}, category = #{category}, book_no = #{bookNo}, cover = #{cover}, score = #{score},
-                        nums = #{nums}, updatetime = #{updatetime} where id = #{id}
+                        nums = #{nums}, updatetime = #{updatetime} , type = #{type} where id = #{id}
     </update>
 
     <update id="updateNumByNo">

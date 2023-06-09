@@ -1,6 +1,5 @@
 package com.example.springboot.service;
 import com.example.springboot.controller.request.BaseRequest;
-import com.example.springboot.controller.request.SalePageRequest;
 import com.example.springboot.entity.Sale;
 import com.github.pagehelper.PageInfo;
 

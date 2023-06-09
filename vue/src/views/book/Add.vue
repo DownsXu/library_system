@@ -38,6 +38,10 @@
       <el-form-item label="数量" prop="nums">
         <el-input v-model="form.nums" placeholder="请输入数量"></el-input>
       </el-form-item>
+      <el-form-item style="margin-left: 30px">
+        <el-radio v-model="form.type" label="图书">图书</el-radio>
+        <el-radio v-model="form.type" label="期刊">期刊</el-radio>
+      </el-form-item>
       <br>
       <el-form-item label="封面" prop="cover">
         <el-upload
@@ -89,6 +93,9 @@ export default {
         nums: [
           { required: true, message: '请输入数量', trigger: 'blur'},
           { validator: checkNums, trigger: 'blur' }
+        ],
+        type: [
+          { required: true, message: '选择类别', trigger: 'blur'}
         ]
       }
     }

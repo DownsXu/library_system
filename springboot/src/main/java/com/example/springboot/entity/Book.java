@@ -25,6 +25,11 @@ public class Book extends BaseEntity implements Serializable {
     private String description;
 
     /**
+     * 类别(图书/书刊)
+     */
+    private String type;
+
+    /**
      * 出版日期
      */
     private String publishDate;
