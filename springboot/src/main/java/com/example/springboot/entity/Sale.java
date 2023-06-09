@@ -6,23 +6,21 @@ import lombok.Data;
 import java.time.LocalDate;
 
 /**
- * 借阅实体类
+ * 售卖实体类
  */
 @Data
-public class Borrow {
+public class Sale {
 
     /**
      * id
      */
     private Integer id;
-
     /**
      * 图书名称
      */
     private String bookName;
-
     /**
-     * 图书标准码
+     * 图书标准号
      */
     private String bookNo;
 
@@ -54,12 +52,12 @@ public class Borrow {
     private LocalDate updatetime;
 
     /**
-     * 借书积分
+     * 购书积分
      */
     private Integer score;
-    private String status;
-    private Integer days;
-    private LocalDate returnDate;
-    // 提醒状态 即将到期（-1）  已到期（当天）  已过期（超过归还日期之后）
-    private String note;
+
+    /**
+     * 售书日期
+     */
+    private LocalDate saleDate;
 }

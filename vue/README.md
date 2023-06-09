@@ -24,7 +24,6 @@ npm run build
 - 创建存储过程统计指定客户借阅、购买情况（书名（刊物名）、数量)；
 - 创建check约束限制图书、期刊的单位为‘本’；
 - 创建表间关系。
-- 
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

@@ -9,7 +9,9 @@
       <div style="flex: 1; text-align: right; padding-right: 20px">
         <el-dropdown size="medium">
           <span class="el-dropdown-link" style="cursor: pointer">
-            {{ admin.username }}<i class="el-icon-arrow-down el-icon--right"></i>
+            <i class="el-icon-user-solid"></i>
+            {{ admin.username }}
+            <i class="el-icon-arrow-down el-icon--right"></i>
           </span>
           <el-dropdown-menu slot="dropdown" style="margin-top: -5px">
             <el-dropdown-item><div style="width: 50px; text-align: center;" @click="logout">退出</div></el-dropdown-item>
@@ -81,9 +83,9 @@
               <i class="el-icon-goods"></i>
               <span>零售管理</span>
             </template>
-            <el-menu-item index="/returList">零售记录</el-menu-item>
+            <el-menu-item index="/addList">零售添加</el-menu-item>
+            <el-menu-item index="/buyList">零售记录</el-menu-item>
           </el-submenu>
-
         </el-menu>
       </div>
 
