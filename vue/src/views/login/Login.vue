@@ -1,5 +1,5 @@
 <template>
-  <div style="height: 100vh; overflow: hidden; position: relative">
+  <div class='index' style="height: 100vh; overflow: hidden; position: relative">
     <el-card class="cover" v-if="loginAdmin.id">
       <slide-verify :l="42"
                     :r="10"
@@ -13,7 +13,7 @@
       ></slide-verify>
     </el-card>
 
-      <div style="width: 500px; height: 400px; background-color: white; border-radius: 10px;
+      <div class="main" style="width: 500px; height: 400px; border-radius: 30px;
         margin: 150px auto; padding:50px">
         <div style="margin: 30px; text-align: center; font-size: 30px; font-weight: bold; color: dodgerblue">登 录</div>
         <el-form :model="admin" :rules="rules" ref="loginForm">
@@ -91,5 +91,16 @@ export default {
   left:50%;
   transform: translate(-50%, -50%);
   z-index: 1000;
+}
+
+.main {
+  background-color: rgba(255, 255, 255, 0.247);
+}
+
+.index {
+  background: url("https://picdl.sunbangyan.cn/2023/06/14/juq8n.png");
+  height:100%;
+  position:fixed;
+  background-size:100% 100%;
 }
 </style>
