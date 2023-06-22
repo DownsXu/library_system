@@ -18,6 +18,9 @@
       <el-form-item label="地址" prop="address">
         <el-input v-model="form.address" placeholder="请输入地址"></el-input>
       </el-form-item>
+      <el-form-item label="积分" prop="account">
+        <el-input v-model="form.account" placeholder="请输入积分"></el-input>
+      </el-form-item>
     </el-form>
 
     <div style="text-align: center; margin-top: 30px">

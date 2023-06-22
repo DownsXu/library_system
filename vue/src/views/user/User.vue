@@ -84,8 +84,8 @@ export default {
   data() {
     const checkNums = (rule, value, callback) => {
       value = parseInt(value)
-      if (value < 0 || value > 10000) {
-        callback(new Error('请输入大于等于10小于或等于200的整数'));
+      if (value < 0 || value > 5000) {
+        callback(new Error('请输入大于等于10小于或等于5000的整数'));
       }
       callback()
     };
@@ -123,11 +123,6 @@ export default {
       })
     },
     load() {
-      // fetch('http://localhost:9090/user/list').then(res => res.json()).then(res => {
-      //   console.log(res)
-      //   this.tableData = res
-      // })
-
       request.get('/user/page', {
         params: this.params
       }).then(res => {
